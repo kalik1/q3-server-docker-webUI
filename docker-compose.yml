@@ -13,7 +13,6 @@ services:
   ng-quake3-be:
     build: ./ng-quake3-be/
     restart: always
-    ports:
 
   ng-quake3-fe:
     build: ./ng-quake3-fe/
