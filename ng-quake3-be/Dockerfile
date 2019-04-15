@@ -13,4 +13,5 @@ RUN apk --no-cache add git && \
 
 WORKDIR /var/q3-server-docker-rest-api/
 
+EXPOSE 9009
 CMD ["npm", "start"]
