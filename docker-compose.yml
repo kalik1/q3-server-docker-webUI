@@ -10,9 +10,6 @@ quake3:
 ng-quake3-be:
    build: ./ng-quake3-be/
    restart: always
-   ports:
-     - 9009:80
-     - 9010:443
 
 ng-quake3-fe:
    build: ./ng-quake3-fe/
