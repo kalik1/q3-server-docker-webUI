@@ -14,7 +14,7 @@ ng-quake3-be:
      - 9009:80
      - 9010:443
 
-ng-quake-fe:
+ng-quake3-fe:
    build: ./ng-quake3-fe/
    ports:
     - 8080:8080
