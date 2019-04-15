@@ -1,0 +1,21 @@
+quake3:
+    build: .
+    restart: always
+    ports:
+     - 27960:27960/udp
+    volumes:
+     - ./server.cfg:/home/ioq3srv/ioquake3/osp/server.cfg
+     - ./logs/games.log:/home/ioq3srv/.q3a/osp/games.log
+
+ng-quake3-be:
+   build: ./ng-quake3-be/
+   restart: always
+   ports:
+     - 9009:80
+     - 9010:443
+
+ng-quake-fe:
+   build: ./ng-quake-fe/
+   ports:
+    - 8080:8080
+
