@@ -9,7 +9,7 @@ Quake 3 Server Docker compose file for running Quake 3 server w/ Web UI
 - Cd folder \
 `cd q3-server-docker-webUI`
 
-- Copy inside ./build/ the original pak0.pk3.  \
+- Copy inside ./build/ the original `pak0.pk3`.  \
 You can copy it from your original Quake3 Arena CD-ROM. If _**and only if**_ you own a copy of original quake 3 copy, you can search and download it from the web.
 
 - Build \
