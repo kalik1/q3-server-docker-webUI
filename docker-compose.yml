@@ -1,4 +1,7 @@
-quake3:
+version: "3"
+
+services:
+  quake3:
     build: .
     restart: always
     ports:
@@ -7,12 +10,12 @@ quake3:
      - ./server.cfg:/home/ioq3srv/ioquake3/osp/server.cfg
      - ./logs/games.log:/home/ioq3srv/.q3a/osp/games.log
 
-ng-quake3-be:
-   build: ./ng-quake3-be/
-   restart: always
+  ng-quake3-be:
+    build: ./ng-quake3-be/
+    restart: always
+    ports:
 
-ng-quake3-fe:
-   build: ./ng-quake3-fe/
-   ports:
-    - 8080:8080
-
+  ng-quake3-fe:
+    build: ./ng-quake3-fe/
+    ports:
+     - 8080:8080
