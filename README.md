@@ -1,5 +1,5 @@
-# q3-server-docker-webUI
-Quake 3 Server Docker compose file for running Quake 3 server w/ Web UI
+# Q3-server-docker-webUI
+A Quake 3 Server Docker compose file for running Quake 3 server w/ Web UI
 
 
 ## Quick Start
@@ -17,3 +17,10 @@ You can copy it from your original Quake3 Arena CD-ROM. If _**and only if**_ you
 
 - Profit \
 `docker-compose up -d`
+
+## Linked Projects:
+- [q3-server-docker-rest-api](https://github.com/kalik1/q3-server-docker-rest-api "q3-server-docker-rest-api") \
+Quake 3 rest API w/ websocket for interacting with RCON
+
+- [q3-server-docker-webUI-angular](https://github.com/kalik1/q3-server-docker-webUI-angular "q3-server-docker-webUI-angular") \
+Frontend for QUAKE3 Server w/ WebUI
