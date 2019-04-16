@@ -1,5 +1,4 @@
 FROM alpine:latest as builder
-MAINTAINER jberrenberg v1.3
 
 # to reduce image size all build and cleanup steps are performed in one docker layer
 
