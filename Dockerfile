@@ -2,6 +2,7 @@ FROM alpine:latest as builder
 MAINTAINER jberrenberg v1.3
 
 # to reduce image size all build and cleanup steps are performed in one docker layer
+
 RUN \
   echo "# INSTALL DEPENDENCIES ##########################################" && \
   apk --no-cache add curl g++ gcc git make && \
@@ -22,10 +23,8 @@ RUN \
 FROM alpine:latest
 RUN adduser ioq3srv -D
 COPY --from=builder /root/ioquake3 /home/ioq3srv/ioquake3
-# RUN ln -s /pak0.pk3 /home/ioq3srv/ioquake3/baseq3/pak0.pk3
 COPY ./build/pak0.pk3 /home/ioq3srv/ioquake3/baseq3/pak0.pk3
 USER ioq3srv
 EXPOSE 27960/udp
-#ENTRYPOINT ["/home/ioq3srv/ioquake3/ioq3ded.x86_64"]
 ENTRYPOINT ["/home/ioq3srv/ioquake3/ioq3ded.x86_64"]
 CMD ["+map", "q3dm17", "+exec", "server.cfg", "+set", "fs_game", "osp"]
