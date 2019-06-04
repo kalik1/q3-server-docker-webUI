@@ -1,6 +1,5 @@
 # Q3-server-docker-webUI
-A Quake 3 Server Docker compose file for running Quake 3 server w/ Web UI
-
+A Quake 3 Server Docker compose file for running Quake 3 server w/ Web UI.
 
 ![ScreenShot](https://github.com/kalik1/q3-server-docker-webUI/blob/master/screenshot_q3.png)
 
