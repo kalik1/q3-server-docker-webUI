@@ -2,6 +2,7 @@
 A Quake 3 Server Docker compose file for running Quake 3 server w/ Web UI.
 
 ![ScreenShot](https://github.com/kalik1/q3-server-docker-webUI/blob/master/screenshot_q3.png)
+![ScreenShot](https://github.com/kalik1/q3-server-docker-webUI/blob/master/screenshot_q3_map.png)
 
 ## Quick Start
 - Clone the repo \
