@@ -11,10 +11,14 @@ services:
      - ./logs/games.log:/home/ioq3srv/.q3a/osp/games.log
 
   ng-quake3-be:
+    environment:
+       - Q3SERV_HOST:quake3
+       
     build: ./ng-quake3-be/
     restart: always
 
   ng-quake3-fe:
+    restart: always
     build: ./ng-quake3-fe/
     ports:
      - 8080:8080
